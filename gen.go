@@ -82,7 +82,7 @@ import "github.com/yakiroren/hotremote/buttons"
 {{- range $key, $value := . }}
 
 func (s *Session) Press{{$key}}() {
-	s.ButtonPress(Buttons.{{$key}})
+	s.Press(Buttons.{{$key}})
 }
 
 {{- end }}

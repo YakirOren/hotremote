@@ -110,7 +110,7 @@ session.PressSelect()
 
 session.PressInfo()
 // or direct call
-session.ButtonPress(Buttons.Info)
+session.Press(Buttons.Info)
 ```
 
 See more at the examples folder.

@@ -4,101 +4,101 @@ package HotRemote
 import "github.com/yakiroren/hotremote/buttons"
 
 func (s *Session) PressBackwards() {
-	s.ButtonPress(Buttons.Backwards)
+	s.Press(Buttons.Backwards)
 }
 
 func (s *Session) PressBlue() {
-	s.ButtonPress(Buttons.Blue)
+	s.Press(Buttons.Blue)
 }
 
 func (s *Session) PressChangeLanguage() {
-	s.ButtonPress(Buttons.ChangeLanguage)
+	s.Press(Buttons.ChangeLanguage)
 }
 
 func (s *Session) PressChannelDown() {
-	s.ButtonPress(Buttons.ChannelDown)
+	s.Press(Buttons.ChannelDown)
 }
 
 func (s *Session) PressChannelUp() {
-	s.ButtonPress(Buttons.ChannelUp)
+	s.Press(Buttons.ChannelUp)
 }
 
 func (s *Session) PressDown() {
-	s.ButtonPress(Buttons.Down)
+	s.Press(Buttons.Down)
 }
 
 func (s *Session) PressEsc() {
-	s.ButtonPress(Buttons.Esc)
+	s.Press(Buttons.Esc)
 }
 
 func (s *Session) PressFavorite() {
-	s.ButtonPress(Buttons.Favorite)
+	s.Press(Buttons.Favorite)
 }
 
 func (s *Session) PressForwards() {
-	s.ButtonPress(Buttons.Forwards)
+	s.Press(Buttons.Forwards)
 }
 
 func (s *Session) PressGreen() {
-	s.ButtonPress(Buttons.Green)
+	s.Press(Buttons.Green)
 }
 
 func (s *Session) PressInfo() {
-	s.ButtonPress(Buttons.Info)
+	s.Press(Buttons.Info)
 }
 
 func (s *Session) PressLC() {
-	s.ButtonPress(Buttons.LC)
+	s.Press(Buttons.LC)
 }
 
 func (s *Session) PressLeft() {
-	s.ButtonPress(Buttons.Left)
+	s.Press(Buttons.Left)
 }
 
 func (s *Session) PressMenu() {
-	s.ButtonPress(Buttons.Menu)
+	s.Press(Buttons.Menu)
 }
 
 func (s *Session) PressMessages() {
-	s.ButtonPress(Buttons.Messages)
+	s.Press(Buttons.Messages)
 }
 
 func (s *Session) PressPause() {
-	s.ButtonPress(Buttons.Pause)
+	s.Press(Buttons.Pause)
 }
 
 func (s *Session) PressPlay() {
-	s.ButtonPress(Buttons.Play)
+	s.Press(Buttons.Play)
 }
 
 func (s *Session) PressPower() {
-	s.ButtonPress(Buttons.Power)
+	s.Press(Buttons.Power)
 }
 
 func (s *Session) PressRecord() {
-	s.ButtonPress(Buttons.Record)
+	s.Press(Buttons.Record)
 }
 
 func (s *Session) PressRed() {
-	s.ButtonPress(Buttons.Red)
+	s.Press(Buttons.Red)
 }
 
 func (s *Session) PressRight() {
-	s.ButtonPress(Buttons.Right)
+	s.Press(Buttons.Right)
 }
 
 func (s *Session) PressSelect() {
-	s.ButtonPress(Buttons.Select)
+	s.Press(Buttons.Select)
 }
 
 func (s *Session) PressStop() {
-	s.ButtonPress(Buttons.Stop)
+	s.Press(Buttons.Stop)
 }
 
 func (s *Session) PressUp() {
-	s.ButtonPress(Buttons.Up)
+	s.Press(Buttons.Up)
 }
 
 func (s *Session) PressYellow() {
-	s.ButtonPress(Buttons.Yellow)
+	s.Press(Buttons.Yellow)
 }

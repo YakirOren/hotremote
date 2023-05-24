@@ -18,7 +18,7 @@ func (c *Client) CreateSession(targetBox string) *Session {
 	}
 }
 
-func (s *Session) ButtonPress(buttonID int) error {
+func (s *Session) Press(buttonID int) error {
 	return s.client.ButtonPress(s.targetBox, buttonID)
 }
 
@@ -40,7 +40,7 @@ func StrToAssci(value string) []int {
 
 func (s *Session) SendStr(value string) {
 	for _, v := range StrToAssci(value) {
-		if err := s.ButtonPress(v); err != nil {
+		if err := s.Press(v); err != nil {
 			return
 		}
 	}
