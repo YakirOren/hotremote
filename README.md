@@ -59,11 +59,11 @@ func main() {
 ```go
 devices, err := client.ListDevices()
 if err != nil {
-log.Fatal(err)
+    log.Fatal(err)
 }
 
 for _, device := range devices {
-log.Println(device.ID, device.Name)
+    log.Println(device.ID, device.Name)
 }
 ```
 

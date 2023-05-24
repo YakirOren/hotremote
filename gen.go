@@ -1,10 +1,5 @@
-// The following directive is necessary to make the package coherent:
-
 //go:build ignore
 // +build ignore
-
-// This program generates contributors.go. It can be invoked by running
-// go generate
 
 package main
 
@@ -22,7 +17,7 @@ import (
 )
 
 func main() {
-	optionFile, _ := os.Open("button_mappings")
+	optionFile, _ := os.Open("data/button_mappings")
 
 	sc := bufio.NewScanner(optionFile)
 	mappings := map[string]int{}
@@ -48,7 +43,7 @@ func main() {
 
 	buttonPressTemplate.Execute(f, mappings)
 
-	d, _ := os.Open("GotoLive.json")
+	d, _ := os.Open("data/custom_events.json")
 	var customEvents []CustomEvent
 	json.NewDecoder(d).Decode(&customEvents)
 

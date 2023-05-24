@@ -13,7 +13,7 @@ import (
 )
 
 func createWSDialer() (*websocket.Dialer, error) {
-	cert, err := LoadX509KeyPair("certificates/cert.pem", "certificates/key.pem")
+	cert, err := loadX509KeyPair("certificates/cert.pem", "certificates/key.pem")
 	if err != nil {
 		return nil, err
 	}
@@ -35,7 +35,7 @@ func createWSDialer() (*websocket.Dialer, error) {
 	}, nil
 }
 
-func LoadX509KeyPair(certFile, keyFile string) (tls.Certificate, error) {
+func loadX509KeyPair(certFile, keyFile string) (tls.Certificate, error) {
 	certPEMBlock, err := certificatesDir.ReadFile(certFile)
 	if err != nil {
 		return tls.Certificate{}, err
@@ -63,7 +63,7 @@ func generateHexString(length int) (string, error) {
 	return hex.EncodeToString(bytes), nil
 }
 
-func (c Client) sendRequest(v any) error {
+func (c *Client) sendRequest(v any) error {
 	return c.conn.WriteJSON(map[string]interface{}{
 		"Params": v,
 	})
