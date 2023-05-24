@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "VOD",
+    "Press": "63281",
+    "Params": "1,zapdigit"
+  },
+  {
+    "Name": "Search",
+    "Press": "",
+    "Params": "BasicSearch"
+  }
+]
