@@ -59,11 +59,11 @@ func main() {
 ```go
 devices, err := client.ListDevices()
 if err != nil {
-    log.Fatal(err)
+log.Fatal(err)
 }
 
 for _, device := range devices {
-    log.Println(device.ID, device.Name)
+log.Println(device.ID, device.Name)
 }
 ```
 
@@ -85,26 +85,32 @@ session.SwitchToChannel(13)
 session.SwitchToChannel(12)
 ```
 
-### Pressing Buttons
+### Buttons
 
 ```go
 // Power on or off the device
-session.Power()
+session.PressPower()
 
-// Press color buttons
-session.Red()
-session.Green()
-session.Blue()
-session.Yellow()
+// color buttons
+session.PressRed()
+session.PressGreen()
+session.PressBlue()
+session.PressYellow()
+
+// movement buttons
+session.PressUp()
+session.PressDown()
+session.PressLeft()
+session.PressDown()
 
 // open search menu
-session.Search()
+session.OpenSearch()
 session.SendStr("value to search")
-session.Select()
+session.PressSelect()
 
-session.Info()
+session.PressInfo()
 // or direct call
-session.ButtonPress(HotRemote.Info)
+session.ButtonPress(Buttons.Info)
 ```
 
 See more at the examples folder.
